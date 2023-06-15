@@ -1,0 +1,1115 @@
+/* CSS dla calego projektu */
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Rubik', sans-serif;
+}
+p{
+  color: gray;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+.info-message{
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px;
+}
+h2{
+  text-align: center;
+  font-weight: 600;
+  margin: 15px;
+}
+.header{
+  width: 100%;
+  top: 0;
+  position: sticky;
+  z-index: 99999;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  height: 80px;
+  padding: 10px 20px;
+  background: white;
+}
+nav img{
+  width: 100px;
+  margin: 10px;
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+  margin-top: 5px;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+}
+.nav-links ul li a{
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+}
+.menu-link::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #F9B138;
+  display: block;
+  margin: auto;
+  transition: 0.3s;
+}
+.menu-link:hover::after{
+  width: 100%;
+}
+.main-index{
+  height: 100vh;
+  width: 100%;
+  background-image: url(icons/donut_background5.jpg);
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-box{
+  color:#242526;
+  position: absolute;
+  text-align: left;
+  top: 35%;
+  left: 15%;
+}
+.text-box h1{
+  font-size: 64px;
+  font-weight: 500;
+}
+.text-box p{
+  margin: 10px 0 20px 0;
+  font-size: 16px;
+  color:#242526;
+  padding: 0;
+}
+.link-button{
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 12px 24px;
+  background: #F9B138;
+  position: relative;
+  cursor: pointer;
+  color: white!important;
+  font-size: 16px;
+}
+.link-button:hover{
+  background: darkorange;
+  transition: 0.4s;
+}
+.menu-link span{
+  margin: 0;
+  vertical-align: bottom;
+  color: #242526!important;
+  height: auto;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' -25,
+  'opsz' 20
+}
+
+/* logout button */
+.image-logout{
+  width: auto;
+  height: 30px;
+  margin-bottom: 5px;
+}
+.image-logout:hover{
+  border-radius: 5px;
+  background: rgb(184, 182, 179);
+  transition: 0.4s;
+}
+/* logout button */
+
+/* footer */
+.footer{
+  display: flex;
+  background: white;
+  flex-direction: row;
+  width: 100%;
+  height: 60px;
+  padding: 30px 0;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.column-footer{
+  display: flex;
+  width: 25%;
+  text-align: left;
+  align-items: center;
+  flex-direction: column;
+}
+.column-footer p{
+  color: black;
+  display: block;
+}
+.logo{
+  width: 110px;
+  margin: 0px;
+}
+.social-icons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.social-icons img{
+  margin: 5px;
+}
+/* footer */
+
+/* login */
+.main{
+  height: 110vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,39,0.7)),url(icons/donuts3.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-section{
+  background: white;
+  border-radius: 5px;
+  height: 70%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.login-section h2{
+  margin-bottom: 30px;
+}
+.login-form{
+  width: 80%;
+}
+.login-input{
+  border: none;
+  width: 70%;
+  margin: 7px;
+  background: gainsboro;
+  padding: 10px 10px;
+  border-radius: 2px;
+}
+.login-submit{
+  border:none;
+  border-radius: 2px;
+  background: orange;
+  margin: 10px;
+  width: 70%;
+  padding: 12px 0px;
+  color: white;
+  transition: all 0.1s ease-out;
+}
+.login-submit:hover{
+  background: darkorange;
+  cursor: pointer;
+}
+.login-form form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+/* login */
+
+/* userpanel */
+.main-user-panel{
+  height: 70vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,39,0.7)),url(icons/donuts3.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userpanel-section{
+  background: white;
+  border-radius: 5px;
+  height: 60%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.userpanel-section h2{
+  font-size: 28px;
+}
+.userpanel-section h3{
+  margin-top: 10px;
+}
+.userpanel-section h4{
+  font-weight: 500;
+}
+.userpanel-section p{
+  font-size: 16px;
+}
+.userpanel-buttons{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+.userpanel-section a{
+  text-decoration: none;
+  background: orange;
+  border-radius: 3px;
+  color: white;
+  width: 30%;
+  padding: 6px 0px;
+  text-align: center;
+  margin: 5px;
+  font-size: 14px;
+  transition: all 0.1s ease-out;
+}
+.userpanel-section a:hover, .userpanel-form input[type="submit"]:hover{
+  background: darkorange;
+  cursor: pointer;
+}
+.userpanel-form{
+text-align: center;
+width: 100%;
+}
+.userpanel-form input[type="text"]{
+  border: none;
+  margin: 10px;
+  background: gainsboro;
+  padding: 10px 10px;
+  border-radius: 2px;
+}
+.userpanel-form input[type="submit"]{
+  border: none;
+  background: orange;
+  border-radius: 3px;
+  color: white;
+  width: 30%;
+  padding: 6px 0px;
+  text-align: center;
+  margin: 5px 0px;
+  font-size: 14px;
+  transition: all 0.1s ease-out;
+}
+.userpanel-form input[type="password"]{
+  border: none;
+  margin: 10px;
+  background: gainsboro;
+  padding: 5px;
+  border-radius: 2px;
+}
+.password-change-info{
+  margin: 0px 0px 5px 0px;
+  padding: 0;
+  color: red;
+}
+.p-info{
+  margin: 5px 0px;
+  padding: 0;
+  color: green;
+}
+/* userpanel */
+
+/* register */
+.register-section{
+  background: white;
+  border-radius: 5px;
+  height: 80%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.register-submit{
+  border:none;
+  border-radius: 2px;
+  background: orange;
+  margin: 10px;
+  width: 74%;
+  padding: 12px 0px;
+  color: white;
+}
+/* register */
+
+/* menu */
+.banner{
+ min-height: 60vh;
+ width: 100%;
+ background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,39,0.7)),url(icons/donut1.jpg);
+ background-position: center;
+ background-size: cover;
+ position: relative;
+ color: black;
+ text-align: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.banner h1{
+ color: white;
+ font-size: 40px;
+}
+.menu{
+  display: flex;
+  background: white;
+  flex-direction: column;
+  align-items: center;
+}
+.info-menu{
+  color: green;
+  padding: 0;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.menu-list{
+  width: 100%;
+}
+.menu-list-form{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px 0px;
+  background: white;
+}
+.product{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  background: white;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.product img{
+  width: 90%;
+  height: auto;
+}
+.add-button{
+  border: none;
+  border-radius: 3px;
+  background: pink;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #181818;
+  font-weight: 500;
+  transition: 0.1s all ease-out;
+}
+.add-button:hover{
+  background: deeppink;
+  cursor: pointer;
+}
+.price-product {
+    color: gray;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.product a{
+  text-decoration: none;
+  text-align: center;
+}
+.title-product{
+  color: #181818;
+  font-size: 16px;
+  font-weight: 400;
+}
+/* menu */
+
+/* employees portal */
+.portal-main{
+  width: 100%;
+  min-height: 200vh;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,39,0.7)),url(icons/donuts4.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.options-menu{
+  background: white;
+  border-radius: 3px;
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 10px;
+  margin: 50px 0px;
+}
+.options-menu h2{
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+.options-menu img{
+  height: auto;
+  width: 100px;
+  margin: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.options-menu ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.options-menu ul li{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: lightblue;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 3px;
+  justify-content: space-between;
+  width: 90%;
+}
+.options-menu h3{
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: green;
+}
+.options-menu ul li p{
+  margin: 10px;
+  color: black;
+  font-size: 16px;
+}
+.list-buttons{
+  border: none;
+  height: 30px;
+  width: 70px;
+  background: white;
+  color: black;
+  border-radius: 3px;
+  margin: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.1s all ease-out;
+}
+.list-buttons:hover{
+  background: pink;
+}
+.column{
+  width: 12%;
+}
+.add-list-button{
+  border: none;
+  padding: 10px 20px;
+  background: white;
+  color: black;
+  border-radius: 3px;
+  margin: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.1s all ease-out;
+}
+.add-list-button:hover{
+  background: pink;
+}
+.username{
+  color: orange;
+}
+.buttons-list{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.links-ids{
+  text-decoration: none;
+  background: white;
+  color: black;
+  border-radius: 3px;
+  margin: 5px;
+  font-weight: 500;
+  width: 90%;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px 0;
+  transition: 0.1s all ease-out;
+}
+.links-ids:hover{
+  background: pink;
+}
+/* employees portal */
+
+/* portal add product */
+.portal-add{
+  width: 100%;
+  height: 110vh;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,39,0.7)),url(icons/donuts4.jpg);
+  background-position: center;
+  background-size: cover;
+  color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add-container{
+  width: 70%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 3px;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+.add-new-form{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.text-inputs{
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px;
+  text-align: left;
+}
+.column-form{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  padding: 10px;
+}
+.column-form input[type="text"]{
+  border: none;
+  width: 90%;
+  margin: 7px 0px;
+  background: white;
+  padding: 5px 10px;
+  border-radius: 2px;
+  background: gainsboro;
+}
+.column-form select{
+  border: none;
+  width: 90%;
+  margin: 7px 0px;
+  background: white;
+  padding: 5px 10px;
+  border-radius: 2px;
+  background: gainsboro;
+}
+.row-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 72%;
+}
+.row-form input[type="submit"]{
+  border:none;
+  border-radius: 2px;
+  background: orange;
+  margin: 10px;
+  width: 90%;
+  padding: 12px 0px;
+  color: white;
+  transition: 0.2s all ease-out;
+}
+.row-form input[type="submit"]:hover{
+  background: darkorange;
+  cursor: pointer;
+}
+.row-form input[type="file"]{
+  align-items: center;
+  margin: 15px;
+}
+.file-row{
+  width: 90%;
+  align-items: left;
+}
+.add-link-button{
+  text-decoration: none;
+  padding: 15px 10px;
+  margin: 10px;
+  background: pink;
+  color: black;
+  border-radius: 2px;
+  font-size: 14px;
+  transition: 0.2s all ease-out;
+}
+.add-link-button:hover{
+  background: deeppink;
+  cursor: pointer;
+}
+/* portal add product */
+
+/* portal edit product */
+.main-edit{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,39,0.7)),url(icons/donuts4.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.options-edit{
+  background: white;
+  border-radius: 3px;
+  width: 95%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 10px;
+}
+.options-edit ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.options-edit ul li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: lightblue;
+  margin: 10px;
+  border-radius: 3px;
+  justify-content: space-between;
+  width: 95%;
+}
+.options-edit ul li p{
+  margin: 10px;
+  color: black;
+  font-size: 16px;
+}
+.options-edit h2{
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+.options-edit img{
+  height: auto;
+  width: 100px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.form-edit{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  border-radius: 3px;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.form-edit input[type='text']{
+  border-radius: 2px;
+  border: none;
+  padding:  15px 10px;
+  margin: 0px;
+  width: 100%;
+}
+.form-edit input[type='submit']{
+  border: none;
+  background: white;
+  padding: 15px 25px;
+  color: black;
+  border-radius: 3px;
+  margin-top: 40px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.1s all ease-out;
+}
+.form-edit input[type='submit']:hover{
+  background: pink;
+}
+.form-edit select{
+  border: none;
+  border-radius: 2px;
+  background: white;
+  padding:  15px 10px;
+  margin: 0px;
+  width: 100%;
+}
+.column-edit{
+  width: 13%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  text-align: left;
+}
+.column-p{
+  margin: 0px;
+  padding: 0px;
+  width: 90%;
+}
+.save-column{
+  width: 10%;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* portal edit product */
+
+/* product description */
+.product-ui{
+  height: 110vh;
+  width: 100%;
+  background-image: url(icons/donuts3.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back-link{
+  width: 5%;
+}
+.window-product{
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: 85%;
+  border-radius: 3px;
+  background: white;
+  align-items: center;
+  justify-content: center;
+}
+.window-product a, .back-link{
+  text-decoration: none;
+  color: orange;
+}
+.window-product a::after, .back-link::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: orange;
+  display: block;
+  margin: auto;
+  transition: 0.3s;
+}
+.window-product a:hover::after, .back-link:hover::after{
+  width: 100%;
+}
+.product-row{
+  width: 90%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.product-row img{
+  width: auto;
+  height: 90%;
+  margin: 20px;
+  margin-left: 50px;
+}
+.info-panel{
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  height: 90%;
+  width: 40%;
+  align-items: left;
+
+}
+.info-panel h3{
+  margin-top: 20px;
+  margin-left: 15px;
+  font-size: 24px;
+}
+.info-panel h4{
+  margin-left: 15px;
+}
+.info-panel p{
+  margin: 5px;
+  font-size: 18px;
+  color: black;
+}
+.add-form-order{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: left;
+  margin: 5px;
+}
+.add-form-order input[type='number']{
+  padding: 10px;
+  margin: 10px;
+  width: 30%;
+}
+.add-form-order input[type='submit']{
+  padding: 15px 20px;
+  font-weight: 500;
+  margin: 10px;
+  border: none;
+  border-radius: 2px;
+  background: pink;
+  transition: 0.2s all ease-out;
+}
+.add-form-order input[type='submit']:hover{
+  background: deeppink;
+  cursor: pointer;
+}
+/* product description */
+
+/* cart */
+.cart-box{
+  background: white;
+  border-radius: 3px;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 10px;
+}
+.cart-box h2{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+.cart-box img{
+  height: auto;
+  width: 100px;
+  margin: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.cart-box ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+.cart-box ul li{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: white;
+  border-bottom: 1px solid darkgray;
+  margin: 10px;
+  padding: 10px;
+  justify-content: space-between;
+  width: 100%;
+  border:
+}
+.cart-box ul li p{
+  margin: 10px;
+  color: black;
+  font-size: 16px;
+}
+.column-cart{
+  width: 25%;
+}
+
+.cart-links{
+  text-decoration: none;
+  background: orange;
+  color: white;
+  border-radius: 3px;
+  margin: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px 20;
+  transition: 0.1s all ease-out;
+}
+.cart-links:hover{
+  background: darkorange;
+}
+.final-cart{
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.total{
+  width: 60%;
+  padding: 30px 20px;
+  border-radius: 2px;
+  text-align: left;
+}
+.total p{
+  display: inline;
+  font-size: 16px;
+  margin-right: 20px;
+  color: #242526;
+}
+#total-price{
+  font-weight: 500;
+}
+.final-cart-buttons{
+  height: auto;
+  width: 40%;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.order-button{
+  width: 70%;
+  text-decoration: none;
+  background: pink;
+  color: #242526;
+  padding: 10px;
+  text-align: center;
+  margin: 20px 0px 5px 5px;
+  border-radius: 2px;
+  display: block;
+  transition: all 0.2s ease-out;
+}
+.order-button:hover{
+  background: deeppink;
+  cursor: pointer;
+}
+.quantity-edit-button{
+  text-decoration: none;
+  color: orange;
+  transition: all 0.2s ease-out;
+}
+.quantity-edit-button::after, .quantity-save-button::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: orange;
+  display: block;
+  margin: auto;
+  transition: 0.3s;
+}
+.quantity-edit-button:hover::after, .quantity-save-button:hover::after{
+  width: 100%;
+}
+.quantity-save-button{
+  border: none;
+  color: orange;
+  background: white;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+  font-size: 16px;
+}
+.cart-quantity{
+  border: none;
+  width: 50px;
+  background: white;
+  padding: 10px;
+  border-radius: 2px;
+  background: gainsboro;
+}
+/* cart */
+/* history */
+.history-main{
+  width: 100%;
+  min-height: 110vh;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,39,0.7)),url(icons/donuts4.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.history-box{
+  background: white;
+  border-radius: 3px;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 10px;
+}
+.history-box h2{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+.history-box img{
+  height: auto;
+  width: 100px;
+  margin: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.history-box ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+.history-box ul li{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: white;
+  border-bottom: 1px solid darkgray;
+  margin: 10px;
+  padding: 10px;
+  justify-content: space-between;
+  width: 100%;
+}
+.history-box ul li p{
+  margin: 10px;
+  color: black;
+  font-size: 16px;
+}
+
+/* history */
